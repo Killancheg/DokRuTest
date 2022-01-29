@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using DokRuTest.Helpers;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -28,19 +29,14 @@ namespace DokRuTest.TestTasksSolutions
                 return number;
             }
 
-            int[] digitArray = GetDigitArrayFromInt(number);
+            int[] digitArray = ArrayHelper.GetDigitArrayFromInt(number);
 
             number = digitArray.Sum();
 
             return GetRecursiveDigitSum(number);
         }
 
-        static public int[] GetDigitArrayFromInt(int number)
-        {
-            var digitArray = number.ToString().Select(digit => int.Parse(digit.ToString())).ToArray();
-
-            return digitArray;
-        }
+        
 
         static private bool IsSinglDigit(int number)
         {

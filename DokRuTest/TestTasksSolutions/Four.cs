@@ -13,10 +13,6 @@ namespace DokRuTest.TestTasksSolutions
 
     static public class Four
     {
-        
-
-        
-
         static public int GetRecursiveDigitSum(int number)
         {
             if (number <=0)

@@ -18,6 +18,7 @@ namespace DokRuTest
 
             Console.WriteLine();
             #endregion
+
             #region Task5
             //Задание 5
             Console.WriteLine("Демонстрация работы 5 задания:");
@@ -34,6 +35,18 @@ namespace DokRuTest
 
             Console.WriteLine();
             #endregion
+
+            #region Task6
+            // Задание 6
+            Console.WriteLine("Демонстрация работы 6 задания:");
+
+            int numberToReverseDigits = GetIntImput();
+            
+            Console.WriteLine($"Все цифры числа отсортированы в обратном порядке: {Six.GetMaxNumberFromDigits(numberToReverseDigits)}");
+
+            Console.WriteLine();
+            #endregion
+
             #region Task7
             //Задание 7
             Console.WriteLine("Демонстрация работы 7 задания:");
@@ -46,6 +59,7 @@ namespace DokRuTest
 
             Console.WriteLine();
             #endregion
+
             //Задание 8
             #region Task8
             Console.WriteLine("Демонстрация работы 8 задания:");

@@ -1,0 +1,16 @@
+D:\Code\Repos\DokRuTest\DokRuTest\bin\Debug\net5.0\DokRuTest.exe
+D:\Code\Repos\DokRuTest\DokRuTest\bin\Debug\net5.0\DokRuTest.deps.json
+D:\Code\Repos\DokRuTest\DokRuTest\bin\Debug\net5.0\DokRuTest.runtimeconfig.json
+D:\Code\Repos\DokRuTest\DokRuTest\bin\Debug\net5.0\DokRuTest.runtimeconfig.dev.json
+D:\Code\Repos\DokRuTest\DokRuTest\bin\Debug\net5.0\DokRuTest.dll
+D:\Code\Repos\DokRuTest\DokRuTest\bin\Debug\net5.0\ref\DokRuTest.dll
+D:\Code\Repos\DokRuTest\DokRuTest\bin\Debug\net5.0\DokRuTest.pdb
+D:\Code\Repos\DokRuTest\DokRuTest\obj\Debug\net5.0\DokRuTest.csproj.AssemblyReference.cache
+D:\Code\Repos\DokRuTest\DokRuTest\obj\Debug\net5.0\DokRuTest.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code\Repos\DokRuTest\DokRuTest\obj\Debug\net5.0\DokRuTest.AssemblyInfoInputs.cache
+D:\Code\Repos\DokRuTest\DokRuTest\obj\Debug\net5.0\DokRuTest.AssemblyInfo.cs
+D:\Code\Repos\DokRuTest\DokRuTest\obj\Debug\net5.0\DokRuTest.csproj.CoreCompileInputs.cache
+D:\Code\Repos\DokRuTest\DokRuTest\obj\Debug\net5.0\DokRuTest.dll
+D:\Code\Repos\DokRuTest\DokRuTest\obj\Debug\net5.0\ref\DokRuTest.dll
+D:\Code\Repos\DokRuTest\DokRuTest\obj\Debug\net5.0\DokRuTest.pdb
+D:\Code\Repos\DokRuTest\DokRuTest\obj\Debug\net5.0\DokRuTest.genruntimeconfig.cache

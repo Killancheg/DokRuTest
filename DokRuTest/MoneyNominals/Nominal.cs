@@ -8,8 +8,10 @@ namespace DokRuTest.MoneyNominals
 {
     public class Nominal
     {
-        protected string name;
+        public string Name { get => name;  }
+        public double Value { get => value; }
 
+        protected string name;
         protected double value;
 
         public double CountCoinsInAmaunt(double amount)

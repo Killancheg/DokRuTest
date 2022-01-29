@@ -25,7 +25,7 @@ namespace DokRuTest
 
             int centAmaunt = GetIntImput();
 
-            Dictionary<string, int> coins = Five.GetMinimalCoinsDictionary(centAmaunt);
+            Dictionary<string, int> coins = Five.GetMinimalUSACoinsDictionary(centAmaunt);
 
             foreach (var coin in coins)
             {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using DokRuTest.MoneyNominals.USA;
+using DokRuTest.MoneyNominals;
 
 namespace DokRuTest.TestTasksSolutions
 {
@@ -18,52 +18,45 @@ namespace DokRuTest.TestTasksSolutions
     static public class Five
     {
 
-        static public Dictionary<string, int> GetMinimalCoinsDictionary(double number)
+        static public Dictionary<string, int> GetMinimalUSACoinsDictionary(double number)
         {
+            Dictionary<string, int> coins = new Dictionary<string, int>();
 
-            int coinCount = Convert.ToInt32(Math.Floor(number));
+            List<Nominal> usaCoins = CreateNomimalListUSA();
 
-            Dictionary<string, int> coins = new Dictionary<string, int>
+            foreach (var usaCoin in usaCoins)
             {
-                {"Pennies", 0},
-                {"Nickels", 0},
-                {"Dimes", 0},
-                {"Quarters", 0}
-            };
+                coins.Add(usaCoin.Name + "s", 0);
+            }
 
             if (number <=0)
             {
                 return coins;
             }
 
-            int[] coinArray = GetCoinArray(coinCount);
+            number = Math.Floor(number);
 
-            coins["Pennies"] = coinArray[3];
-            coins["Nickels"] = coinArray[2];
-            coins["Dimes"] = coinArray[1];
-            coins["Quarters"] = coinArray[0];
+            foreach (var usaCoin in usaCoins)
+            {
+                coins[usaCoin.Name + "s"] = Convert.ToInt32(usaCoin.CountCoinsInAmaunt(number));
+                number -= usaCoin.CountCoinsInAmaunt(number) * usaCoin.Value;
+            }
 
             return coins;
         }
 
-        static private int[] GetCoinArray(int number)
+        static public List<Nominal> CreateNomimalListUSA()
         {
-            int[] coinArray= new int[] {0,0,0,0};
+            List<Nominal> usaCoins = new List<Nominal>();
 
-            if (number <=0)
-            {
-                return coinArray;
-            }
+            usaCoins.Add(new MoneyNominals.USA.Quarter());
+            usaCoins.Add(new MoneyNominals.USA.Dime());
+            usaCoins.Add(new MoneyNominals.USA.Nickel());
+            usaCoins.Add(new MoneyNominals.USA.Pennie());
 
-            int[] coinDenominationArray = new int[] { 25, 10, 5, 1 };
-
-            for (int i = 0; i < coinDenominationArray.Length; i++)
-            {
-                coinArray[i] = number / coinDenominationArray[i];
-                number = number - coinArray[i] * coinDenominationArray[i];
-            }
-
-            return coinArray;
+            return usaCoins;
         }
+
+        
     }
 }
